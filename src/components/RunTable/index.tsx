@@ -56,14 +56,14 @@ const RunTable = ({
     sortFuncInfo === 'Date' ? sortDateFunc : sortDateFuncReverse;
   const sortFuncMap = new Map([
     ['KM', sortKMFunc],
-    ['Elevation Gain', sortElevationGainFunc],
+    ['Elevation', sortElevationGainFunc],
     ['Pace', sortPaceFunc],
     ['BPM', sortBPMFunc],
     ['Time', sortRunTimeFunc],
     ['Date', sortDateFuncClick],
   ]);
   if (!SHOW_ELEVATION_GAIN) {
-    sortFuncMap.delete('Elevation Gain');
+    sortFuncMap.delete('Elevation');
   }
 
   const handleClick: React.MouseEventHandler<HTMLElement> = (e) => {

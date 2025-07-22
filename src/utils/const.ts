@@ -33,7 +33,7 @@ const GOOGLE_ANALYTICS_TRACKING_ID = '';
 // styling: set to `true` if you want dash-line route
 const USE_DASH_LINE = true;
 // styling: route line opacity: [0, 1]
-const LINE_OPACITY = 0.4;
+const LINE_OPACITY = 1;
 // styling: map height
 const MAP_HEIGHT = 600;
 //set to `false` if you want to hide the road label characters
@@ -43,14 +43,14 @@ const ROAD_LABEL_DISPLAY = true;
 const PRIVACY_MODE = false;
 // update for now 2024/11/17 the lights on default is false
 //set to `false` if you want to make light off as default, only effect when `PRIVACY_MODE` = false
-const LIGHTS_ON = false;
+const LIGHTS_ON = true;
 //set to `true` if you want to show the 'Elevation Gain' column
-const SHOW_ELEVATION_GAIN = false;
+const SHOW_ELEVATION_GAIN = true;
 // richer title for the activity types (like garmin style)
 const RICH_TITLE = false;
 
 // IF you outside China please make sure IS_CHINESE = false
-const IS_CHINESE = true;
+const IS_CHINESE = false;
 const USE_ANIMATION_FOR_GRID = false;
 const CHINESE_INFO_MESSAGE = (yearLength: number, year: string): string => {
   const yearStr = year === 'Total' ? '所有' : ` ${year} `;
@@ -166,7 +166,7 @@ const dark_vanilla = 'rgb(228,212,220)';
 // If your map has an offset please change this line
 // issues #92 and #198
 export const NEED_FIX_MAP = false;
-export const MAIN_COLOR = nike;
+export const MAIN_COLOR = 'rgb(0, 0, 0)'; //nike;
 export const PROVINCE_FILL_COLOR = '#47b8e0';
 export const COUNTRY_FILL_COLOR = dark_vanilla;
 
@@ -179,30 +179,29 @@ export const SWIMMING_COLOR = 'rgb(255,51,51)';
 
 // map tiles vendor, maptiler or mapbox or stadiamaps
 // if you want to use maptiler, set the access token in MAP_TILE_ACCESS_TOKEN
-export const MAP_TILE_VENDOR = 'mapbox';
+export const MAP_TILE_VENDOR = 'maptiler';
 
 // map tiles style name, see MAP_TILE_STYLES for more details
-export const MAP_TILE_STYLE = 'dark-v10';
+export const MAP_TILE_STYLE = 'basic-v2-custom';
 
 // access token. you can apply a new one, it's free.
 // maptiler: Gt5R0jT8tuIYxW6sNrAg | sign up at https://cloud.maptiler.com/auth/widget
 // stadiamaps: 8a769c5a-9125-4936-bdcf-a6b90cb5d0a4 |sign up at https://client.stadiamaps.com/signup/
-export const MAP_TILE_ACCESS_TOKEN = 'Gt5R0jT8tuIYxW6sNrAg';
+// export const MAP_TILE_ACCESS_TOKEN = 'Gt5R0jT8tuIYxW6sNrAg';
+export const MAP_TILE_ACCESS_TOKEN = '8JujpLgQr5QNVBlRUgS1'; // 내 키
 
 export const MAP_TILE_STYLES = {
   maptiler: {
-    'dataviz-dark':
-      'https://api.maptiler.com/maps/dataviz-dark/style.json?key=',
+    'dataviz-dark': 'https://api.maptiler.com/maps/dataviz-dark/style.json?key=',
     'basic-dark': 'https://api.maptiler.com/maps/basic-v2-dark/style.json?key=',
-    'streets-dark':
-      'https://api.maptiler.com/maps/streets-v2-dark/style.json?key=',
-    'outdoor-dark':
-      'https://api.maptiler.com/maps/outdoor-v2-dark/style.json?key=',
-    'bright-dark':
-      'https://api.maptiler.com/maps/bright-v2-dark/style.json?key=',
+    'streets-dark': 'https://api.maptiler.com/maps/streets-v2-dark/style.json?key=',
+    'outdoor-dark': 'https://api.maptiler.com/maps/outdoor-v2-dark/style.json?key=',
+    'bright-dark': 'https://api.maptiler.com/maps/bright-v2-dark/style.json?key=',
     'topo-dark': 'https://api.maptiler.com/maps/topo-v2-dark/style.json?key=',
-    'winter-dark':
-      'https://api.maptiler.com/maps/winter-v2-dark/style.json?key=',
+    'winter-dark': 'https://api.maptiler.com/maps/winter-v2-dark/style.json?key=',
+    'streets-v2': 'https://api.maptiler.com/maps/streets-v2/style.json?key=',
+    'streets-v2-custom': 'https://api.maptiler.com/maps/019832b1-de49-7ad5-a973-e16d45eb19d4/style.json?key=',
+    'basic-v2-custom': 'https://api.maptiler.com/maps/019832b3-6057-70b8-9c18-126e5dc34d1d/style.json?key=',
     hybrid: 'https://api.maptiler.com/maps/hybrid/style.json?key=',
   },
   stadiamaps: {
@@ -216,6 +215,9 @@ export const MAP_TILE_STYLES = {
     'dark-v11': 'mapbox://styles/mapbox/dark-v11',
     'navigation-night': 'mapbox://styles/mapbox/navigation-night-v1',
     'satellite-streets-v12': 'mapbox://styles/mapbox/satellite-streets-v12',
+    'streets-v12': 'mapbox://styles/mapbox/streets-v12',
+    'outdoors-v12': 'mapbox://styles/mapbox/outdoors-v12',
+    'navigation-day-v1': 'mapbox://styles/mapbox/navigation-day-v1'
   },
   default: 'mapbox://styles/mapbox/dark-v10',
 };

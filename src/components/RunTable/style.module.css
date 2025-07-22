@@ -72,6 +72,9 @@
 .tableContainer {
   width: 100%;
   overflow-x: auto;
+  table-layout: fixed;
+  word-wrap: break-word;
+  /* word-break: break-word; */
 }
 
 .runDate {

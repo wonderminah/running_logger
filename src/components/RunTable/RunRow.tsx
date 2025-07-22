@@ -49,7 +49,7 @@ const RunRow = ({
       {paceParts && <td>{paceParts}</td>}
       <td>{heartRate && heartRate.toFixed(0)}</td>
       <td>{runTime}</td>
-      <td className={styles.runDate}>{run.start_date_local}</td>
+      <td className={styles.runDate}>{run.start_date_local.slice(2, -3)}</td>
     </tr>
   );
 };

@@ -10,7 +10,7 @@ import Map, {
 import { MapInstance } from 'react-map-gl/src/types/lib';
 import useActivities from '@/hooks/useActivities';
 import {
-  IS_CHINESE,
+  is_chiNESE,
   ROAD_LABEL_DISPLAY,
   MAPBOX_TOKEN,
   PROVINCE_FILL_COLOR,
@@ -23,6 +23,7 @@ import {
   MAP_TILE_STYLE,
   MAP_TILE_VENDOR,
   MAP_TILE_ACCESS_TOKEN,
+  IS_CHINESE,
 } from '@/utils/const';
 import {
   Coordinate,

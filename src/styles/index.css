@@ -43,7 +43,7 @@
 
 [data-theme='dark'] {
   /* const nike = 'rgb(224,237,94)'; */
-  --color-brand: #e0ed5e;
+  /* --color-brand: #e0ed5e;
   --color-secondary: #ccd94a;
   --color-bg: #1a1a1a;
   --color-tx: #e0ed5e;
@@ -52,6 +52,19 @@
   --color-run-date: #dddddd;
   --color-run-table-thead: #cccccc;
   --color-run-row-hover-background: #242424;
+  --color-activity-card: #2e2e2e;
+  --font-sans: 'IBM Plex Sans', sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace; */
+
+  --color-brand: #3d3d3d;
+  --color-secondary: #ccd94a;
+  --color-bg: #ffffff;
+  --color-tx: #e0ed5e;
+  --color-hr: #fb2c36;
+  --color-selected: #e0ed5e;
+  --color-run-date: #3d3d3d;
+  --color-run-table-thead: #3d3d3d;
+  --color-run-row-hover-background: #e7e7e7;
   --color-activity-card: #2e2e2e;
   --font-sans: 'IBM Plex Sans', sans-serif;
   --font-mono: 'IBM Plex Mono', monospace;
