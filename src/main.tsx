@@ -23,14 +23,14 @@ const routes = createBrowserRouter(
       path: '/',
       element: withOptionalGAPageTracking(<Index />),
     },
-    // {
-    //   path: 'summary',
-    //   element: withOptionalGAPageTracking(<HomePage />),
-    // },
-    // {
-    //   path: '*',
-    //   element: withOptionalGAPageTracking(<NotFound />),
-    // },
+    {
+      path: 'summary',
+      element: withOptionalGAPageTracking(<HomePage />),
+    },
+    {
+      path: '*',
+      element: withOptionalGAPageTracking(<NotFound />),
+    },
   ],
   { basename: import.meta.env.BASE_URL }
 );
