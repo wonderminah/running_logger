@@ -74,6 +74,8 @@
   overflow-x: auto;
   table-layout: fixed;
   word-wrap: break-word;
+  max-height: 40rem;
+  overflow-y: visible !important;
   /* word-break: break-word; */
 }
 

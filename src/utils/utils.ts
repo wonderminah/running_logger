@@ -90,7 +90,7 @@ const formatRunTime = (moving_time: string): string => {
   if (minutes === 0) {
     return seconds + 's';
   }
-  return minutes + 'min';
+  return minutes + 'm';
 };
 
 // for scroll to the map
