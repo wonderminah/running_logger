@@ -17,7 +17,7 @@ const getBasePath = () => {
 const data: ISiteMetadataResult = {
   siteTitle: 'Running Logger',
   siteUrl: 'https://yihong.run',
-  logo: 'src/static/logo.avif',
+  logo: 'https://running-logger.vercel.app/logo.avif',
   description: 'Personal site and blog',
   navLinks: [
     {
