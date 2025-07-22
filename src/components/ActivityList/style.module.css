@@ -65,7 +65,7 @@
 .chart {
   height: 250px;
   width: 100%;
-  background-color: var(--color-activity-card);
+  background-color: var(--color-secondary);
   display: flex;
   align-items: center;
   justify-content: center;
