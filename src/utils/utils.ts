@@ -381,6 +381,10 @@ const getBoundsForGeoData = (
     height: 600,
   }).fitBounds(cornersLongLat, { padding: 200 });
   let { longitude, latitude, zoom } = viewState;
+  
+  // 위도를 살짝 아래로 조정 (더 남쪽으로)
+  latitude = latitude - 0.1; // 0.1도 정도 아래로
+  
   if (features.length > 1) {
     zoom = 11.5;
   }
