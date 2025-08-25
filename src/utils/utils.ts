@@ -383,7 +383,7 @@ const getBoundsForGeoData = (
   let { longitude, latitude, zoom } = viewState;
   
   // 위도를 살짝 아래로 조정 (더 남쪽으로)
-  latitude = latitude - 0.1; // 0.1도 정도 아래로
+  latitude = latitude - 0.00001; // 0.01도 정도 아래로
   
   if (features.length > 1) {
     zoom = 11.5;
